@@ -15,14 +15,17 @@ public class Customer implements java.io.Serializable
    @javax.persistence.SequenceGenerator(name = "CUSTOMER_ID_GENERATOR", sequenceName = "CUSTOMER_ID_SEQ")
    private java.lang.Long id;
 
-   @org.kie.api.definition.type.Label(value = "Name")
+   @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
 
-   @org.kie.api.definition.type.Label(value = "Address")
+   @org.kie.api.definition.type.Label("Address")
    private java.lang.String address;
 
-   @org.kie.api.definition.type.Label(value = "Age")
+   @org.kie.api.definition.type.Label("Age")
    private java.lang.Integer age;
+
+   @org.kie.api.definition.type.Label(value = "Credit Score")
+   private java.lang.Integer creditScore;
 
    public Customer()
    {
@@ -68,13 +71,25 @@ public class Customer implements java.io.Serializable
       this.age = age;
    }
 
+   public java.lang.Integer getCreditScore()
+   {
+      return this.creditScore;
+   }
+
+   public void setCreditScore(java.lang.Integer creditScore)
+   {
+      this.creditScore = creditScore;
+   }
+
    public Customer(java.lang.Long id, java.lang.String name,
-         java.lang.String address, java.lang.Integer age)
+         java.lang.String address, java.lang.Integer age,
+         java.lang.Integer creditScore)
    {
       this.id = id;
       this.name = name;
       this.address = address;
       this.age = age;
+      this.creditScore = creditScore;
    }
 
 }
