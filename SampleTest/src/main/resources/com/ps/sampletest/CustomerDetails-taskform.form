@@ -3,5 +3,37 @@
 <property name="name" value="CustomerDetails-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="customer_name" type="InputText" id="998216686">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (customer)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_customer/name"/>
+<property name="outputBinding" value="out_customer/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="customer_age" type="InputTextInteger" id="1488438125">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;age (customer)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_customer/age"/>
+<property name="outputBinding" value="out_customer/age"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="2" name="customer_address" type="InputText" id="54148707">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;address (customer)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_customer/address"/>
+<property name="outputBinding" value="out_customer/address"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="customer_creditScore" type="InputTextInteger" id="568892548">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;creditScore (customer)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_customer/creditScore"/>
+<property name="outputBinding" value="out_customer/creditScore"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
 <dataHolder inputId="in_customer" name="#0000A0" type="dataModelerEntry" outId="out_customer" value="com.ps.sampletest.Customer" id="customer"/>
 </form>
