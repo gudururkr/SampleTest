@@ -2,11 +2,17 @@ package com.ps.sampletest;
 
 import java.lang.Number;
 
-rule "CreditScoreCal"
-	ruleflow-group "CreditScoreCal"
-	dialect "mvel"
+rule "age below 18" ruleflow-group "CreditScoreCal" dialect "mvel"
 	when
 		customer : Customer( age < 18 )
 	then
 		customer.setCreditScore( 5 );
+end
+
+rule "age between 18,50" ruleflow-group "CreditScoreCal" dialect "mvel"
+
+	when
+		customer : Customer( age > 18 && age <= 50)
+	then
+		customer.setCreditScore( 10 );
 end
