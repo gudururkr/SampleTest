@@ -3,8 +3,8 @@
   <baselineScore>0.0</baselineScore>
   <initialScore>0.0</initialScore>
   <useReasonCodes>false</useReasonCodes>
-  <factName>Customer</factName>
-  <fieldName>creditScore</fieldName>
+  <factName></factName>
+  <fieldName></fieldName>
   <reasonCodesAlgorithm></reasonCodesAlgorithm>
   <reasonCodeField></reasonCodeField>
   <characteristics>
@@ -33,7 +33,14 @@
   </characteristics>
   <packageName>com.ps.sampletest</packageName>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>java.lang.Double</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>java.lang.Integer</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
   <agendaGroup>CalCreditScore</agendaGroup>
   <ruleFlowGroup>CalCreditScore</ruleFlowGroup>
