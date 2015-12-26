@@ -4,6 +4,8 @@ import java.lang.Number;
 
 rule "CreditScoreCal"
 	dialect "mvel"
+	ruleflow-group "CreditScoreCal"
+	no-loop true
 	when
 		customer : Customer( age < 18 )
 	then
