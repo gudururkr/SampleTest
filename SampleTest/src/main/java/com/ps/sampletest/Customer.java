@@ -24,8 +24,8 @@ public class Customer implements java.io.Serializable
    @org.kie.api.definition.type.Label("Age")
    private java.lang.Integer age;
 
-   @org.kie.api.definition.type.Label(value = "Credit Score")
-   private java.lang.Integer creditScore;
+   @org.kie.api.definition.type.Label("Credit Score")
+   private Double creditScore;
 
    public Customer()
    {
@@ -71,19 +71,19 @@ public class Customer implements java.io.Serializable
       this.age = age;
    }
 
-   public java.lang.Integer getCreditScore()
+   public java.lang.Double getCreditScore()
    {
       return this.creditScore;
    }
 
-   public void setCreditScore(java.lang.Integer creditScore)
+   public void setCreditScore(java.lang.Double creditScore)
    {
       this.creditScore = creditScore;
    }
 
    public Customer(java.lang.Long id, java.lang.String name,
          java.lang.String address, java.lang.Integer age,
-         java.lang.Integer creditScore)
+         java.lang.Double creditScore)
    {
       this.id = id;
       this.name = name;
