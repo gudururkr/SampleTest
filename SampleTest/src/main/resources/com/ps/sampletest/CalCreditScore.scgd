@@ -36,5 +36,5 @@
     <imports/>
   </imports>
   <agendaGroup>Calculating Credit Score For Age</agendaGroup>
-  <ruleFlowGroup>CreditScoreCal</ruleFlowGroup>
+  <ruleFlowGroup>CalCreditScore</ruleFlowGroup>
 </org.drools.workbench.models.guided.scorecard.shared.ScoreCardModel>
