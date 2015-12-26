@@ -1,0 +1,9 @@
+package com.ps.sampletest;
+
+import java.lang.Number;
+
+rule "CreditScoreCal"
+	dialect "mvel"
+	when
+	then
+end
