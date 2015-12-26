@@ -5,5 +5,7 @@ import java.lang.Number;
 rule "CreditScoreCal"
 	dialect "mvel"
 	when
+		customer : Customer( age < 18 )
 	then
+		customer.setCreditScore( 5 );
 end
