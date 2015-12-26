@@ -3,8 +3,8 @@ package com.ps.sampletest;
 import java.lang.Number;
 
 rule "CreditScoreCal"
-	dialect "mvel"
 	ruleflow-group "CreditScoreCal"
+	dialect "mvel"
 	when
 		customer : Customer( age < 18 )
 	then
