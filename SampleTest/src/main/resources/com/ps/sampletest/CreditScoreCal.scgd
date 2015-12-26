@@ -3,15 +3,38 @@
   <baselineScore>0.0</baselineScore>
   <initialScore>0.0</initialScore>
   <useReasonCodes>false</useReasonCodes>
-  <factName></factName>
-  <fieldName></fieldName>
+  <factName>Customer</factName>
+  <fieldName>creditScore</fieldName>
   <reasonCodesAlgorithm></reasonCodesAlgorithm>
   <reasonCodeField></reasonCodeField>
-  <characteristics/>
+  <characteristics>
+    <org.drools.workbench.models.guided.scorecard.shared.Characteristic>
+      <fact>Customer</fact>
+      <field>age</field>
+      <baselineScore>0.0</baselineScore>
+      <reasonCode></reasonCode>
+      <attributes>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>18</value>
+          <partialScore>5.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>&lt;</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+        <org.drools.workbench.models.guided.scorecard.shared.Attribute>
+          <value>18,50</value>
+          <partialScore>10.0</partialScore>
+          <reasonCode></reasonCode>
+          <operator>&gt;..&lt;=</operator>
+        </org.drools.workbench.models.guided.scorecard.shared.Attribute>
+      </attributes>
+      <name>ageScore</name>
+      <dataType>int</dataType>
+    </org.drools.workbench.models.guided.scorecard.shared.Characteristic>
+  </characteristics>
   <packageName>com.ps.sampletest</packageName>
   <imports>
     <imports/>
   </imports>
-  <agendaGroup></agendaGroup>
-  <ruleFlowGroup></ruleFlowGroup>
+  <agendaGroup>Calculating Credit Score For Age</agendaGroup>
+  <ruleFlowGroup>CreditScoreCal</ruleFlowGroup>
 </org.drools.workbench.models.guided.scorecard.shared.ScoreCardModel>
