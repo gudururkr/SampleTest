@@ -6,6 +6,7 @@
   <bpmn2:itemDefinition id="__80BAA29F-56C3-4DAB-8D35-2E836D280970_in_customerInputXItem" structureRef="com.ps.sampletest.Customer"/>
   <bpmn2:itemDefinition id="__80BAA29F-56C3-4DAB-8D35-2E836D280970_SkippableInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__26FC29D0-78AC-4EC3-859C-D8ACDFD40839_in_customerInputXItem" structureRef="com.ps.sampletest.Customer"/>
+  <bpmmn2:message id="_2-2-4_InMessage" itemRef="_2-2-4_InMessageType" />
   <bpmn2:process id="SampleTest.CustomerProcess" drools:packageName="org.jbpm" drools:version="1.0" name="CustomerProcess" isExecutable="true">
     <bpmn2:property id="customer" itemSubjectRef="_customerItem"/>
     <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
